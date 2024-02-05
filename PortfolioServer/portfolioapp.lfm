@@ -1,0 +1,33 @@
+object PortfolioModule: TPortfolioModule
+  OldCreateOrder = False
+  Actions = <  
+    item
+      Name = 'Auth'
+      Default = False
+      OnRequest = AuthRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'Command'
+      Default = False
+      OnRequest = CommandRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'VFS'
+      Default = False
+      OnRequest = VFSRequest
+      Template.AllowTagParams = False
+    end  
+    item
+      Name = 'VM'
+      Default = False
+      OnRequest = VMRequest
+      Template.AllowTagParams = False
+    end>
+  CreateSession = False
+  Height = 150
+  HorizontalOffset = 306
+  VerticalOffset = 146
+  Width = 150
+end

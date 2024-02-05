@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" class="has-navbar-fixed-top">
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Kevin Veroneau's Online Portfolio</title>
+  <link rel="stylesheet" href="/s/fontawesome.min.css"/>
+  <link rel="stylesheet" href="/s/bulma.min.css"/>
+  <link href="/s/jquery.terminal.css" rel="stylesheet"/>
+  <script src="/s/jquery-1.7.2.min.js"></script>
+  <script src="/s/jquery.terminal-0.8.8.min.js"></script>
+  <script src="/s/marked.min.js"></script>
+  <script src="/s/Portfolio.js?v1"></script>
+</head>
+<body onload="rtl.showUncaughtExceptions=true; rtl.run();">
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        Kevin Veroneau
+      </a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="portfolio-navbar">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="portfolio-navbar" class="navbar-menu">
+      <div class="navbar-start">
+        <a href="/" class="navbar-item">Home</a>
+      </div>
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <a id="TerminalBtn" class="button is-primary">Terminal</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="columns">
+    <section class="section">
+      <div id="leftpane" class="container">
+        <div id="SectionTabs" class="container"></div>
+        <div id="TabBody" class="content">
+          <h1 class="title">
+            Kevin Veroneau's Online Portfolio
+          </h1>
+          <p class="subtitle">
+            All this content is going to be updated before I upload.
+            Here is some additional content to see how wrapping to the next
+            line will work...
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div id="pasjsconsole" class="container"></div>
+    </section>
+  </div>
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>Portfolio SPA web application by Kevin Veroneau</p>
+    </div>
+  </footer>
+  <div id="terminalModal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p id="terminalTitle" class="modal-card-title">Portfolio Terminal</p>
+        <button id="terminalClose" class="delete" aria-label="close"></button>
+      </header>
+      <section class="modal-card-body">
+        <div id="terminal" class="container"></div>
+      </section>
+    </div>
+  </div>
+  <div id="dialogModal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+      <header class="modal-card-head">
+        <p id="dialogTitle" class="modal-card-title">Modal title</p>
+        <button id="dialogClose" class="delete" aria-label="close"></button>
+      </header>
+      <section id="dialog" class="modal-card-body">
+      </section>
+      <footer class="modal-card-foot">
+        <button id="dialogSave" class="button is-success">Save changes</button>
+        <button id="dialogCancel" class="button">Cancel</button>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
+
